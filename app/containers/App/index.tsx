@@ -60,8 +60,7 @@ function App(props: Props) {
       <meta name="description" content="OMNI Demo Test" />
     </Helmet>
     <Switch>
-      {/* <Route exact path='/' render={() => { return !app.loginOn ? <Redirect exact to="/login" component={Login} /> : <HomePage /> }} /> */}
-      <Route exact path="/" component={HomePage} />
+      <Route exact path='/' render={() => { return !app.loginOn ? <Redirect exact to="/login" component={Login} /> : <HomePage /> }} />
       <Route exact path="/login" component={Login} />
       <Route path="" component={NotFoundPage} />
     </Switch>
